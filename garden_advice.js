@@ -6,8 +6,6 @@
 function getGardeningAdvice(month) {
   let advice;
 
-  // TODO: Add a default case for the switch statement.
-  // TODO: Add more months and seasons.
   // Provides gardening advice based on the month
   switch (month) {
     case "January":
@@ -28,17 +26,44 @@ function getGardeningAdvice(month) {
     case "June":
       advice = "Water your garden regularly and enjoy the first harvests.";
       break;
-    // ... other months can be added here
+    case "July":
+      advice = "Harvest herbs and vegetables. Watch for peak ripeness.";
+      break;
+    case "August":
+      advice = "Start planting fall crops like spinach and kale.";
+      break;
+    case "September":
+      advice = "Harvest the last of your summer crops and clean up beds.";
+      break;
+    case "October":
+      advice = "Plant garlic and spring-flowering bulbs.";
+      break;
+    case "November":
+      advice = "Protect your plants from frost and prepare for winter.";
+      break;
+    case "December":
+      advice = "Clean your garden tools and plan for the next year.";
+      break;
+    // --- ADDED DEFAULT CASE ---
+    // This handles any input that isn't a valid month.
+    default:
+      advice = "Invalid month provided. Please enter a valid month.";
+      break;
   }
 
   return advice;
 }
 
 // --- Example Usage ---
-// This demonstrates how the new function is used.
-const currentMonth = "June";
+const currentMonth = "August"; // Test with a new month
 const monthAdvice = getGardeningAdvice(currentMonth);
 
-// Displays the generated advice
 console.log(`Gardening advice for ${currentMonth}:`);
 console.log(monthAdvice);
+
+// --- Test the default case ---
+const invalidMonth = "Potato";
+const invalidAdvice = getGardeningAdvice(invalidMonth);
+
+console.log(`\nTesting with an invalid month: ${invalidMonth}`);
+console.log(invalidAdvice);
