@@ -1,6 +1,6 @@
 # Garden Advice Application
 
-This is a simple command-line application that provides gardening advice based on the month. This project serves as a practical exercise for the on how to work with Git Workflows in future projects, I may undertake.
+This is a simple command-line application that provides gardening advice based on the month. This project serves as a practical exercise, as to how one should work with Git Workflows. 
 
 ---
 
